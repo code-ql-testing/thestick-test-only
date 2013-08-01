@@ -1,0 +1,37 @@
+-- phpMyAdmin SQL Dump
+-- version 3.5.2.2
+-- http://www.phpmyadmin.net
+--
+-- Host: 127.0.0.1
+-- Generation Time: Aug 01, 2013 at 09:30 AM
+-- Server version: 5.5.27
+-- PHP Version: 5.4.7
+
+SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
+SET time_zone = "+00:00";
+
+--
+-- Database: `tasks`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tasks`
+--
+
+CREATE TABLE IF NOT EXISTS `tasks` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `task_title` varchar(255) NOT NULL,
+  `task_details` text NOT NULL,
+  `task_priority` int(11) NOT NULL,
+  `date_created` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `task_duedate` date NOT NULL DEFAULT '0000-00-00',
+  `task_promisedate` date DEFAULT NULL,
+  `task_projectname` varchar(255) NOT NULL,
+  `task_status` int(11) NOT NULL,
+  `task_assigned` varchar(255) NOT NULL,
+  `task_createdby` varchar(255) NOT NULL,
+  `task_isarchive` int(4) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=41 ;
