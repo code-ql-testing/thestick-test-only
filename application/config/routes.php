@@ -44,6 +44,11 @@ $route['404_override'] = '';
 // API reROUTES
 $route['api/tasks'] = "api/alltasks/tasks";
 $route['api/tasks/(:num)'] = "api/alltasks/task/id/$1";
+$route['api/tasksby/(:num)'] = "api/alltasks/taskuser/id/$1";
+$route['api/tasksassigned/(:num)'] = "api/alltasks/taskassigned/id/$1";
+
+$route['api/users'] = "api/allusers/users";
+$route['api/users/(:num)'] = "api/allusers/user/id/$1";
 
 
 /* End of file routes.php */

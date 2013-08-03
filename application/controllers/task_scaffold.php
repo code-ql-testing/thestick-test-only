@@ -8,7 +8,5 @@ class Task_scaffold extends CI_Controller {
         function index() {
                 $this->load->library('sparkPlug', array('table'=>'tasks'));
                 $this->sparkplug->scaffold();
-                /* OR */
-                //$this->sparkplug->generate();
         }
 }
