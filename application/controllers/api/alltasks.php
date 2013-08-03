@@ -121,7 +121,7 @@ class Alltasks extends REST_Controller
             'task_type'                     => $this->post('task_type'),
             'task_details'                  => $this->post('task_details'),
             'task_priority'                 => $this->post('task_priority'),
-            //'date_created'                => $this->post('task_priority'),        // timestamp by DB
+            //'date_created'                => $this->post('date_created'),        // timestamp by DB
             'task_datecreated'              => $this->post('task_datecreated'),
             'task_duedate'                  => $this->post('task_duedate'),
             'task_promisedate'              => $this->post('task_promisedate'),
@@ -159,7 +159,7 @@ class Alltasks extends REST_Controller
                     'task_type'                     => $this->post('task_type'),
                     'task_details'                  => $this->post('task_details'),
                     'task_priority'                 => $this->post('task_priority'),
-                    //'date_created'                => $this->post('task_priority'),        // timestamp by DB
+                    //'date_created'                => $this->post('date_created'),        // timestamp by DB
                     'task_datecreated'              => $this->post('task_datecreated'),
                     'task_duedate'                  => $this->post('task_duedate'),
                     'task_promisedate'              => $this->post('task_promisedate'),
