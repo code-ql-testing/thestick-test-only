@@ -15,14 +15,14 @@
 |
 /
 */
-#dsadsadsadsadsad
+
 if( DEVELOPER == 'ernstmalifer'){
 	$config['base_url']	= 'http://192.168.1.108/thestick';
 }
 else if( DEVELOPER == 'dryicejayr'){
 	$config['base_url']	= 'http://192.168.1.42/thestick';
 }else {
-	$config['base_url']	= 'http://localhost/thesticks';
+	$config['base_url']	= 'http://localhost/thestick';
 }
 
 /*
