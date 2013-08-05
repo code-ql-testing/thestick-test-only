@@ -15,7 +15,7 @@
 |
 /
 */
-$config['base_url']	= '';
+$config['base_url']	= 'test';
 
 if( DEVELOPER == 'ernstmalifer'){
 	$config['base_url']	= 'http://192.168.1.108/thestick';
