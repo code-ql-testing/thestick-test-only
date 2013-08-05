@@ -73,6 +73,7 @@ if( DEVELOPER == 'ernstmalifer' ){
 	$db['default']['swap_pre'] = '';
 	$db['default']['autoinit'] = TRUE;
 	$db['default']['stricton'] = FALSE;
+	
 }
 else {
 	$db['default']['hostname'] = 'localhost';
