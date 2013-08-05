@@ -22,7 +22,7 @@ if( DEVELOPER == 'ernstmalifer'){
 else if( DEVELOPER == 'dryicejayr'){
 	$config['base_url']	= 'http://192.168.1.42/thestick';
 }else {
-	$config['base_url']	= 'http://localhost/thestick';
+	$config['base_url']	= 'http://localhost/thestickss';
 }
 
 /*
