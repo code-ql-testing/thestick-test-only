@@ -16,9 +16,12 @@
 */
 $config['base_url']	= '';
 
-if( DEVELOPER == 'ernstmalifer' ){
+if( DEVELOPER == 'ernstmalifer'){
 	$config['base_url']	= 'http://192.168.1.108/thestick';
-} else {
+}
+else if( DEVELOPER == 'dryicejayr'){
+	$config['base_url']	= 'http://192.168.1.108/thestick';
+}else {
 	$config['base_url']	= 'http://localhost/thestick';
 }
 
