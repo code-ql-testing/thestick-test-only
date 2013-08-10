@@ -12,6 +12,7 @@ class AllUsers extends REST_Controller
         
         if($tasks)
         {
+            sleep(2);
             $this->response($tasks, 200); // 200 being the HTTP response code
         }
 
@@ -39,7 +40,7 @@ class AllUsers extends REST_Controller
             }
             else
             {
-                $this->response($task, 400);
+                $this->response($task, 200);
             }
         }
     }

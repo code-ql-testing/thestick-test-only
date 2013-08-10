@@ -74,6 +74,7 @@ class Auth extends CI_Controller {
 
 				// AJAX login
 				if( $this->input->post('ajax') ){
+					sleep(1);
   					header('Content-Type: application/json'); //<-- send mime-type header
 					echo json_encode(array('login' => 'true', 'id' => $this->ion_auth->get_user_id()));
 					die;
@@ -90,6 +91,7 @@ class Auth extends CI_Controller {
 
 				// AJAX login
 				if( $this->input->post('ajax') ){
+					sleep(1);
   					header('Content-Type: application/json'); //<-- send mime-type header
 					echo json_encode(array('login' => 'false'));
 					die;

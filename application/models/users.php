@@ -16,6 +16,7 @@ class Users extends CI_Model {
     {
         $this->db->select('id, username, email, first_name, last_name, company, phone');
         $query = $this->db->get($this->users_tablename);
+
         return $query->result_array();
     }
 

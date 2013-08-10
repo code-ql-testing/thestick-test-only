@@ -68,6 +68,7 @@ class Alltasks extends REST_Controller
                 
                 if($tasks)
                 {
+                    sleep(2);
                     $this->response($tasks, 200); // 200 being the HTTP response code
                 }
 
