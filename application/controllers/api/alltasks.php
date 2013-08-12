@@ -132,15 +132,15 @@ class Alltasks extends REST_Controller
             'task_currenttimebudget'        => $this->post('task_currenttimebudget'),
             'task_datecompleted'            => $this->post('task_datecompleted'),
             'task_assigned'                 => $this->post('task_assigned'),
-            'task_createdby'                => $this->post('task_createdby'),
-            'task_requestedby'              => $this->post('task_requestedby'),
+            'task_createdby'                => $this->ion_auth->get_user_id(), //$this->post('task_createdby'),
+            'task_requestedby'              => $this->ion_auth->get_user_id(), //$this->post('task_requestedby'),
             'task_lastnote'                 => $this->post('task_lastnote'),
             'task_lastnotedate'             => $this->post('task_lastnotedate'),
             'task_isarchive'                => $this->post('task_isarchive'),
         );
 
         $message = $this->Tasks->add_task($task);
-        $this->response($message, 200); // 200 being the HTTP response code
+        $this->response(array('code' => '10', 'id' => $message), 200); // 200 being the HTTP response code
     }
 
     function task_post()
@@ -155,6 +155,7 @@ class Alltasks extends REST_Controller
         {
             if( $this->Tasks->check_taskownership_byid($id, $this->ion_auth->get_user_id()) ) 
             {
+                /*
                 $task = array(
                     'task_title'                    => $this->post('task_title'),
                     'task_type'                     => $this->post('task_type'),
@@ -176,9 +177,10 @@ class Alltasks extends REST_Controller
                     'task_lastnotedate'             => $this->post('task_lastnotedate'),
                     'task_isarchive'                => $this->post('task_isarchive'),
                 );
+                */
 
-                $message = $this->Tasks->update_task($task, $id);
-                $this->response($message, 200); // 200 being the HTTP response code
+                $message = $this->Tasks->update_task($this->input->post(), $id);
+                $this->response(array('code' => '10', 'message' => $message), 200); // 200 being the HTTP response code
             }
             else
             {

@@ -1,0 +1,41 @@
+<!DOCTYPE HTML>
+<html manifest="" lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title>Karen</title>
+    <style type="text/css">
+         /**
+         * Example of an initial loading indicator.
+         * It is recommended to keep this as minimal as possible to provide instant feedback
+         * while other resources are still being loaded for the first time
+         */
+        html, body {
+            height: 100%;
+            background-color: #1985D0;
+			position: relative;
+        }
+
+        #appLoadingIndicator {
+			background-image: url(resources/loading/loadingkaren.png);
+			background-repeat: no-repeat;
+			background-size: contain;
+			-webkit-background-size: contain;
+			background-position: top center;
+			position: absolute;
+			top: 50%;
+			text-align: center;
+			width: 50%;
+			height: 5em;
+			margin-top: -5em;
+			padding-top: 7em;
+			left: 25%;
+        }
+    </style>
+    <!-- The line below must be kept intact for Sencha Command to build your application -->
+    <script id="microloader" type="text/javascript" src="touch/microloader/development.js"></script>
+</head>
+<body>
+    <div id="appLoadingIndicator">
+    </div>
+</body>
+</html>
