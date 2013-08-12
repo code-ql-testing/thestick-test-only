@@ -5,6 +5,7 @@ Ext.define('Karen.view.TasksListMain', {
 	config: {
 		store: 'Tasks',
 		layout: 'fit',
+		mode: 'multi',
 		plugins: [
 	        {	xclass: 'Ext.plugin.PullRefresh',
 	            pullRefreshText: 'Pull down to load more tasks!',
@@ -14,7 +15,7 @@ Ext.define('Karen.view.TasksListMain', {
                 },
 	        }
 	    ],
-		itemTpl: '<div class="checkbox-container" id="todo_check_{id}"></div><div class="priority priority-{task_priority}"></div><div class="task-title"><p>{task_title}</p></div>'
+		itemTpl: '<div class="checkbox-container" id="todo_check_{id}"></div><div class="status status-{task_status}"></div><div class="priority priority-{task_priority}"></div><div class="task-title"><p>{task_title}</p></div>'
 	},
 
     constructor : function(config) {

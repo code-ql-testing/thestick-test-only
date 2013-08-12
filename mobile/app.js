@@ -51,8 +51,8 @@ Ext.application({
 
     models: ['User', 'Users', 'Task'],
     stores: ['Users', 'Tasks'],
-    views:  ['Viewport', 'Login', 'Register', 'Navigation', 'Tasklist', 'Main', 'TasksListMain', 'TaskInfo'],
-    controllers: ['Viewport', 'Taskcrud'],
+    views:  ['Viewport', 'Login', 'Register', 'Navigation', 'Tasklist', 'Main', 'TasksListMain', 'TaskInfo', 'MyPanel', 'MyList'],
+    controllers: ['Viewport', 'Taskcrud', 'Autocomplete'],
 
     launch: function() {
         // Destroy the #appLoadingIndicator element

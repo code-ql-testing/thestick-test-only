@@ -84,7 +84,7 @@ Ext.define('Karen.controller.Viewport', {
 
 	doLogin: function() {
 		
-		var jump = false;
+		var jump = true;
 
 		Ext.getCmp('taskinfo').hide();
 
@@ -367,10 +367,15 @@ Ext.define('Karen.controller.Viewport', {
     checkTask: function(view, index, target, record, e, eOpts){
 	    var elm = Ext.get(e.target);
 	    
-	    //console.log(elm, Ext.getCmp(elm.dom.id));
+	    console.log(view.listItems[index]);
+
+	    //index.addCls('hello')
+	    //Ext.select('#' + elm.dom.id).elements[0].className += ' checked';
 
 	    if( elm.dom.className == 'checkbox-container' ) {
-	    	console.log('checkbox');
+
+	    	
+
 	    }
 	    else {
 	    	this.showTask(view, index, false);
@@ -445,6 +450,7 @@ Ext.define('Karen.controller.Viewport', {
 			}
 			
 		} else {
+			taskInfo.down('#taskstatus').setCls( 'status-1' );
 			taskInfo.down('#taskstatus').setHtml( '<div class="empty">Set Task Status</div>' );
 		}
 

@@ -43,13 +43,29 @@ Ext.define('Karen.view.TaskInfo', {
                         id: 'taskcreatedby',
                         html: '',
                         flex: 1,
+                        listeners: {
+                            tap: {
+                                element: 'element',
+                                fn: function(e) {
+                                    this.fireEvent('tapped', this);
+                                }
+                            },
+                        },
                     },
                     {
                         xtype: 'panel',
                         name: 'taskassigned',
                         id: 'taskassigned',
                         html: '',
-                        flex: 1
+                        flex: 1,
+                        listeners: {
+                            tap: {
+                                element: 'element',
+                                fn: function(e) {
+                                    this.fireEvent('tapped', this);
+                                }
+                            },
+                        },
                     }
                 ]
     			

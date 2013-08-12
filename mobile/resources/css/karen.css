@@ -114,17 +114,15 @@
 	position: absolute;
 	height: 100%;
 	float: left;
-	border-right: dotted 1px rgba(0,0,0,.2);
+	border-right: dotted 2px rgba(255,255,255,.4);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: 1.5em 1.5em;
+	background-image: url(../images/icons/checkbox-false.png);
 }
 
-#tasksListMain .x-list-item .priority {
-	position: absolute;
-	right: 0px;
-	background-repeat: no-repeat;
-	height: 100%;
-	width: 2em;
-	margin-right: .5em;
-	background-position: center center 
+#tasksListMain .x-item-selected .checkbox-container {
+	background-image: url(../images/icons/checkbox-true.png);
 }
 
 #tasksListMain .x-list-item .task-title {
@@ -140,15 +138,35 @@
 	overflow: hidden;
 }
 
-.priority.priority-1 {
-	background-image: url(../images/icons/priority-1.png);
+#tasksListMain .x-list-item .priority {
+	position: absolute;
+	right: 0px;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 2em;
+	margin-right: .5em;
+	background-position: center center 
 }
-.priority.priority-2 {
-	background-image: url(../images/icons/priority-2.png);
+
+#tasksListMain .x-list-item .status {
+	position: absolute;
+	right: 0px;
+	background-repeat: no-repeat;
+	height: 100%;
+	width: 2em;
+	margin-right: 2em;
+	background-position: center center 
 }
-.priority.priority-3 {
-	background-image: url(../images/icons/priority-3.png);
-}
+
+.priority.priority-1 {	background-image: url(../images/icons/priority-1.png); }
+.priority.priority-2 {	background-image: url(../images/icons/priority-2.png); }
+.priority.priority-3 {	background-image: url(../images/icons/priority-3.png); }
+
+.status.status-1 {	background-image: url(../images/icons/status-1.png); }
+.status.status-2 {	background-image: url(../images/icons/status-2.png); }
+.status.status-3 {	background-image: url(../images/icons/status-3.png); }
+.status.status-4 {	background-image: url(../images/icons/status-4.png); }
+.status.status-5 {	background-image: url(../images/icons/status-5.png); }
 
 #taskinfo {
 	background-color: #fff;
@@ -200,6 +218,12 @@
 #taskpriority.priority-1 { background-image: url(../images/icons/priority-1.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
 #taskpriority.priority-2 { background-image: url(../images/icons/priority-2.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
 #taskpriority.priority-3 { background-image: url(../images/icons/priority-3.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
+
+#taskstatus.status-1 { background-image: url(../images/icons/status-1.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
+#taskstatus.status-2 { background-image: url(../images/icons/status-2.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
+#taskstatus.status-3 { background-image: url(../images/icons/status-3.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
+#taskstatus.status-4 { background-image: url(../images/icons/status-4.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
+#taskstatus.status-5 { background-image: url(../images/icons/status-5.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
 
 #taskdetails { background-image: url(../images/icons/task_details.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
 #taskprojectname { background-image: url(../images/icons/task_details.png);	background-repeat: no-repeat; background-position: 1.5em 1.2em; }
