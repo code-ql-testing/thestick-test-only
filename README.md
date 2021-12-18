@@ -15,3 +15,4 @@ Instructions
 * Configure/add entry in application/config/db.php for database settings
 * Upload the migration file to your database
 * Start Coding :)
+test
